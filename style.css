@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    width: fit-content;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: #e79371;
+    border: 2px solid black;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.translate-box {
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(#e79371, rgb(240, 225, 225), rgb(63, 63, 63));
+    border: 4px double black;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.translate-box:hover {
+    transform: translate(50px, 100px);
+}
+
+.rotate-box {
+    width: 300px;
+    height: 200px;
+    background-image: radial-gradient(circle, rgb(238, 180, 180), white, rgb(137, 232, 235));
+    border: 2px dotted black;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.rotate-box:hover {
+    transform: rotate(20deg);
+}
+
+.scale-box {
+    width: 300px;
+    height: 200px;
+    background-image: conic-gradient(red, rgb(246, 246, 172), rgb(143, 234, 143), rgb(159, 159, 234), rgb(59, 57, 57));
+    margin: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.scale-box:hover {
+    background-color: yellow;
+    transform: scaleY(1.5);
+}
+
+.skew-box {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient( rgb(237, 138, 57), white, rgb(163, 163, 241));
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.skew-box:hover {
+    background-color: yellow;
+    border: 1px solid black;
+    transform: skew(20deg, 10deg);
+}
